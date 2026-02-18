@@ -1,0 +1,39 @@
+body {
+    background-color: lightslategray;
+}    
+
+header{
+    text-align: center; 
+    padding: 20px;
+    background-color: #708090; 
+    color: black;
+    
+
+}
+ul  {
+    display: flex;          
+    justify-content: center;  
+    list-style-type: none;   
+    padding: 0;              
+    gap: 20px;
+ }   
+
+.izquierda {
+    float: left;            
+    width: 250px;           
+    text-align: center;
+} 
+
+.Derecha {
+    float: right;           
+    width: 250px;           
+    text-align: center;     
+}
+
+.publiIzquierda img, 
+.publiDerecha img {
+    width: 200px;           
+    height: 250px;          
+    
+}
+
