@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscribete</title>
+    <link rel="stylesheet" href="../Estilos/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <h1 id="titulo">Mascostore</h1>
+        <h3>Demuestrale a tu mascota todo tu amor</h3>
+        </div>
+    </header>
+
+    <section>
+        <form action="index.html" method="post">
+            <fieldset>
+                <legend>Registro de Usuario</legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required><br>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" required><br>
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" pattern="[0-9]{8}[A-Z]" required ><br>
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" pattern="C/.+ Nº[0-9]+ P[A-Z]"><br>
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" required><br>
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" required><br>
+                <label for="cp">Código Postal:</label>
+                <input type="text" id="cp" name="cp" list="lista-cp" pattern="[0-9]{5}" required>
+                <datalist id="listaCP">
+                    <option value="37001">
+                    <option value="37002">
+                    <option value="37003">
+                    <option value="37004">
+                    <option value="37005">
+                </datalist><br>
+                <label for="pais">País:</label>
+                <input type="text" id="pais" required><br>
+                <label for="nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="nacimiento"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="correo@correo.es"><br>
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="pass" pattern="[a-zA-Z]{1,7}_[a-zA-Z0-9]{5}&[0-9]{2}" required><br>
+                <label>Sexo:</label>
+                <input type="radio" name="sexo" value="H" required> Hombre 
+                <input type="radio" name="sexo" value="M"> Mujer<br>
+                <label for="aficiones">Aficiones:</label>
+                <input type="text" id="aficiones" list="lista-aficiones" required>
+                <datalist id="lista-aficiones">
+                    <option value="Deporte">
+                    <option value="Lectura">
+                    <option value="Cine">
+                    <option value="Viajar">
+                </datalist><br>
+                <label for="foto">Subir foto de perfil:</label>
+                <input type="file" id="foto"><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+                <button type="button" onclick="window.location.href='../index.html'">Cancelar</button>    
+            </fieldset>
+        </form>
+    </section>
+    
+</body>
+</html>
